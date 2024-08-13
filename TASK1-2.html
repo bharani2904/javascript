@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Methods</title>
+</head>
+<body>
+    <script>
+        let book = {
+            title : "The War",
+            author: "Bruce D porter",
+            Yearofpublished: "1940",
+            age : function(){
+                console.log(2000 - Number(book.Yearofpublished));
+            },
+getsummary: function(){
+    console.log("World War I, also known as the Great War, started in 1914 after the assassination of Archduke Franz Ferdinand of Austria. ")
+}
+        }
+        book.getsummary();
+        book.age();
+    
+    </script>
+</body>
+</html>

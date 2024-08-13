@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            enterage(){
+                a =+prompt("Enter the age:");
+            },
+            dec(){
+                if(a>0)
+                    console.log(--a);
+                else{
+                    console.log("Age is Zero,can't decerease");
+                }
+            },
+            inc(){
+                console.log(++a);
+            },
+            named(name) { 
+                this.name=name;    
+            }
+        }
+        person.enterage();
+        person.inc();
+        person.dec();
+        person.dec();
+        person.dec();
+        person.dec();
+        person.dec();
+        person.dec();
+        person.inc();
+        person.inc();
+        person.named("john");
+        console.log(person.name);
+    </script>
+</body>
+</html>
