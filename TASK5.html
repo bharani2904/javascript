@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+</head>
+<body>
+    <script>
+        let user1 = {
+            name1: "John",
+            age1:30,
+            isPresent1: true
+        };
+        let user2 = {
+            name2: "Bob",
+            age2:27,
+            isPresent2: false
+        }
+        //keys should not be the same in both the objects
+        let user = {...user2, ...user1,}
+        console.log(user)
+    </script>
+</body>
+</html>

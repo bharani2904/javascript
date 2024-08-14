@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+</head>
+<body>
+    <script>
+        function towerOfHanoi(n,rodOne,rodTwo,rodThree){
+            if(n == 0)
+            return;
+            towerOfHanoi(n-1,rodOne,rodThree,rodTwo);
+            console.log("Disk no "+ n+ " moved from rod " + rodOne+ " to "+ rodTwo)
+            towerOfHanoi(n-1, rodThree, rodTwo, rodOne)
+        }
+        num = 3;
+        towerOfHanoi(num,'A','B','C');
+    </script>
+</body>
+</html>
